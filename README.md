@@ -70,6 +70,12 @@ These effects were also noticeable in our recent Fldigi lab, as modes with great
 
 Pull requests welcome.
 
+## Resources Used
+[GnuRadio Tutorial | Digital Modulation BPSK, QPSK, & 16 QAM | Adaptive Modulation and Coding for 5G by Muhammad Mustaqim](https://www.youtube.com/watch?v=fKg82UIKhGY)
+[GNURadio Wiki](https://wiki.gnuradio.org/index.php?title=Main_Page)
+[Comparing Files in Notepad++](https://www.howtogeek.com/how-to-compare-two-files-in-notepad-plus-plus/#:~:text=Compare%20Two%20Files%20in%20Notepad%2B%2B,-Now%20that%20you&text=After%20opening%20both%20files%2C%20from,see%20your%20files'%20differences%20highlighted.)
+[Software Defined Radio Reciever, James Patrick Kelly, Penn State University](https://honors.libraries.psu.edu/files/final_submissions/4410)
+
 ## License
 
 [GNUGPLv3](https://choosealicense.com/licenses/gpl-3.0/)
