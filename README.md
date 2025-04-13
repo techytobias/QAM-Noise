@@ -42,7 +42,7 @@ bits_chunk=4
 
 ### Visualizations vs File Comparison
 
-If you wish to view the visualizations of the noise, ensure repeat is set to "Yes." Otherwise, the constellation will be frozen. If you wish to examine data loss, set repeat to "No" so file sizes of input.txt and output.txt won't get out of control. The default file size is 10 KB.
+If you wish to view the visualizations of the noise, ensure repeat is set to "Yes." Otherwise, the constellation will be frozen, and look rather drab. Watching it live gives more depth to the situation. If you wish to examine data loss, set repeat to "No" so file sizes of input.txt and output.txt won't get out of control. The default file size is 10 KB.
 
 ### Adjusting Noise Quantity
 
@@ -64,14 +64,11 @@ Diff between transmitted and received message using above parameters (few errors
 
 Through experimentation (and some research), I determined that fewer constellation points flagging faster is superior to more points flagging slower. Modes with more points inherently have less distance between them, and a noisy environment leads to points appearing in the space of an adjacent point since they are so close together. With fewer points and therefor greater distances, the odds that a point arrives in its designated area increases dramatically. 
 
-These effects were noticeable in our recent Fldigi lab, as modes with greater point counts were found to be less resilient to various noise sources, including an FM radio between channels and human clapping. 
+These effects were also noticeable in our recent Fldigi lab, as modes with greater point counts were found to be less resilient to various noise sources, including an FM radio between channels and human clapping. 
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
+Pull requests welcome.
 
 ## License
 
