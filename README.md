@@ -57,7 +57,7 @@ Noise amplitude 0.14 16QAM Constellation Freeze Frame:
 Diff between transmitted and received message using above parameters (few errors!)
 ![Diff example](Diff_example.png)
 
-##Flow chart
+## Flow chart
 ![GNU Radio Companion Flow Chart](flowchart.png)
 
 ## Takeaways
