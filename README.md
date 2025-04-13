@@ -52,7 +52,7 @@ To adjust the noise quantity, modify the noise_level variable. Amplitudes below 
 ## Examples
 
 Noise amplitude 0.14 16QAM Constellation Freeze Frame:
-![QAM Constellation](consteallation16qam.png)
+![QAM Constellation](constellation16qam.png)
 
 Diff between transmitted and received message using above parameters (few errors!)
 ![Diff example](Diff_example.png)
