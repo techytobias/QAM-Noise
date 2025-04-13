@@ -9,7 +9,7 @@ Radio. Add or create a visualization of the QAM constellation. (There are some e
 
 ## Approach
 
-While the provided problem specifies the use of the QAM Mod and Demod blocks, those have been deprecating in GNU Radio Companion since version 3.8. I researched how to get around this, and found the Constellation Object, which when coupled with Encode and Decode blocks, can simulate 16-QAM along with other modes including BPSK, QPSK, and 8PSK out of the box. 
+While the provided problem specifies the use of the QAM Mod and Demod blocks, those have been deprecating in GNU Radio Companion since version 3.8. See [this GitHub issue](https://github.com/gnuradio/gnuradio/issues/1081) for more information. I researched how to get around this, and found the Constellation Object, which when coupled with Encode and Decode blocks, can simulate 16-QAM along with other modes including BPSK, QPSK, and 8PSK out of the box. 
 
 I started by adding a random data source, which ranges from 0-256 (2^8) to support the generation of 8-bit extended ASCII Characters. Then, the bits are sent to both a file (to record the original message transmitted) and a "Packed to Unpacked" block, which takes the input bytes and outputs them as bits (0 or 1). This bit stream is first throttled to prevent CPU overload, and then encoded into the selected mode (16QAM fo example). From here, the encoded data is sent to a constellation (so a noiseless signal can be visualized) and also summed with a configurable Gaussian noise source. The sum is then decoded, and then the data is repacked so it can appear as characters in the output file. A constellation is also generated, so the added noise can be visualized.
 
