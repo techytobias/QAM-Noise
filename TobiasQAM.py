@@ -69,7 +69,7 @@ class TobiasQAM(gr.top_block, Qt.QWidget):
         self.noise_level = noise_level = 0.1
         self.mod_points = mod_points = 16
         self.bits_chunk = bits_chunk = 4
-        self.QAM = QAM = digital.constellation_8psk().base()
+        self.QAM = QAM = digital.constellation_16qam().base()
         self.QAM.set_npwr(1.0)
 
         ##################################################
